@@ -1,0 +1,18 @@
+# Local dev
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Node (in case)
+node_modules/
+npm-debug.log*
+.env
+.env.local

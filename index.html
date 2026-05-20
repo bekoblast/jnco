@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="JNCO - Jufal & Naif Obaid Al Shammari Trading & Contracting Co. Building excellence in contracting since 1973. Specialists in roads, bridges, infrastructure & general construction in Saudi Arabia." />
+    <meta name="keywords" content="JNCO, Al Shammari, contracting Saudi Arabia, roads, bridges, infrastructure, Saudi Aramco contractor, Royal Commission, Jubail, Yanbu, Ras Tanura" />
+    <meta name="author" content="Jufal & Naif Obaid Al Shammari Trading & Contracting Co." />
+    <link rel="canonical" href="https://www.naifjnco.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.naifjnco.com/" />
+    <meta property="og:title" content="JNCO — Building Excellence in Contracting Since 1973" />
+    <meta property="og:description" content="Five decades of engineering excellence in roads, bridges, infrastructure and general construction — trusted by Saudi Aramco, SABIC, the Royal Commission and more." />
+    <meta property="og:image" content="https://www.naifjnco.com/images/works/road-asphalt-fenced.jpg" />
+    <meta property="og:locale" content="ar_SA" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="JNCO — Building Excellence in Contracting Since 1973" />
+    <meta name="twitter:description" content="Five decades of engineering excellence — trusted by Saudi Aramco, SABIC, the Royal Commission and more." />
+    <meta name="twitter:image" content="https://www.naifjnco.com/images/works/road-asphalt-fenced.jpg" />
+
+    <title>JNCO — Building Excellence in Contracting Since 1973</title>
+    <link rel="icon" href="logo1.png" type="image/png" />
+    <link rel="apple-touch-icon" href="logo1.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script>
+        // FOUC prevention: apply theme + lang before first paint
+        (function () {
+            try {
+                var theme = localStorage.getItem('jnco-theme') || 'dark';
+                document.documentElement.setAttribute('data-theme', theme);
+                var lang = localStorage.getItem('jnco-lang') || 'ar';
+                document.documentElement.lang = lang;
+                document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+            } catch (e) {}
+        })();
+    </script>
+</head>
+<body>
+
+    <!-- LOADER -->
+    <div id="loader" class="loader">
+        <div class="loader-inner">
+            <div class="loader-logo">
+                <img src="logo1.png" alt="JNCO" />
+            </div>
+            <div class="loader-bar"><span></span></div>
+            <div class="loader-text" data-en="Building Excellence" data-ar="نبني التميّز">نبني التميّز</div>
+        </div>
+    </div>
+
+    <!-- NOISE OVERLAY -->
+    <div class="noise"></div>
+
+    <!-- CURSOR BLOB -->
+    <div class="cursor-blob"></div>
+
+    <!-- SCROLL PROGRESS -->
+    <div class="scroll-progress"><span></span></div>
+
+    <!-- NAV -->
+    <header class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-brand">
+                <img src="logo1.png" alt="JNCO" />
+                <span class="nav-brand-text">
+                    <strong>JNCO</strong>
+                    <small data-en="Trading & Contracting" data-ar="للتجارة والمقاولات">Trading & Contracting</small>
+                </span>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="#about" data-en="About" data-ar="عن الشركة">About</a>
+                <a href="#services" data-en="Services" data-ar="الخدمات">Services</a>
+                <a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a>
+                <a href="#clients" data-en="Clients" data-ar="العملاء">Clients</a>
+                <a href="#equipment" data-en="Equipment" data-ar="المعدات">Equipment</a>
+                <a href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" fill="none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor"/></svg>
+                    <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4" fill="currentColor"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4L7 17M17 7l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                    <span class="lang-en">EN</span>
+                    <span class="lang-divider"></span>
+                    <span class="lang-ar">ع</span>
+                </button>
+                <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" data-en="About" data-ar="عن الشركة">About</a>
+        <a href="#services" data-en="Services" data-ar="الخدمات">Services</a>
+        <a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a>
+        <a href="#clients" data-en="Clients" data-ar="العملاء">Clients</a>
+        <a href="#equipment" data-en="Equipment" data-ar="المعدات">Equipment</a>
+        <a href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-image" style="background-image: url('images/works/road-asphalt-fenced.jpg');"></div>
+            <div class="hero-overlay"></div>
+            <div class="grid-overlay"></div>
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-badge" data-aos="fade-up">
+                <span class="hero-badge-dot"></span>
+                <span data-en="Est. 1973 · Kingdom of Saudi Arabia" data-ar="تأسست 1973 · المملكة العربية السعودية">Est. 1973 · Kingdom of Saudi Arabia</span>
+            </div>
+
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                <span class="hero-line" data-en="Building Excellence" data-ar="نبني التميّز">Building Excellence</span>
+                <span class="hero-line hero-line-accent" data-en="in Contracting" data-ar="في المقاولات">in Contracting</span>
+                <span class="hero-line" data-en="Since 1973" data-ar="منذ 1973">Since 1973</span>
+            </h1>
+
+            <p class="hero-sub" data-aos="fade-up" data-aos-delay="200" data-en="Five decades of engineering excellence in roads, bridges, infrastructure and general construction — trusted by Saudi Aramco, SABIC, the Royal Commission and more." data-ar="خمسة عقود من التميّز الهندسي في الطرق والجسور والبنية التحتية والإنشاءات العامة — موثوق بها من قِبل أرامكو السعودية وسابك والهيئة الملكية وأكثر.">
+                Five decades of engineering excellence in roads, bridges, infrastructure and general construction — trusted by Saudi Aramco, SABIC, the Royal Commission and more.
+            </p>
+
+            <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+                <a href="#projects" class="btn btn-primary">
+                    <span data-en="Our Projects" data-ar="مشاريعنا">Our Projects</span>
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a href="#contact" class="btn btn-ghost">
+                    <span data-en="Get in Touch" data-ar="تواصل معنا">Get in Touch</span>
+                </a>
+            </div>
+
+            <div class="hero-marquee" data-aos="fade-up" data-aos-delay="400">
+                <div class="marquee-track">
+                    <span>SAUDI ARAMCO</span><span>·</span>
+                    <span>SABIC</span><span>·</span>
+                    <span data-en="ROYAL COMMISSION" data-ar="الهيئة الملكية">ROYAL COMMISSION</span><span>·</span>
+                    <span>SEC</span><span>·</span>
+                    <span>MODA</span><span>·</span>
+                    <span>SAMSUNG ENGINEERING</span><span>·</span>
+                    <span>SINOHYDRO</span><span>·</span>
+                    <span>CRCC</span><span>·</span>
+                    <span>CCCC</span><span>·</span>
+                    <span>SAUDI ARAMCO</span><span>·</span>
+                    <span>SABIC</span><span>·</span>
+                    <span data-en="ROYAL COMMISSION" data-ar="الهيئة الملكية">ROYAL COMMISSION</span><span>·</span>
+                    <span>SEC</span><span>·</span>
+                    <span>MODA</span><span>·</span>
+                    <span>SAMSUNG ENGINEERING</span><span>·</span>
+                </div>
+            </div>
+        </div>
+
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <span data-en="SCROLL" data-ar="مرّر">SCROLL</span>
+            <span class="scroll-line"></span>
+        </a>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat" data-aos="fade-up">
+                    <div class="stat-num" data-counter="53">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label" data-en="Years of Excellence" data-ar="عاماً من التميّز">Years of Excellence</div>
+                </div>
+                <div class="stat" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-num" data-counter="35">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label" data-en="Major Projects" data-ar="مشروعاً رئيسياً">Major Projects</div>
+                </div>
+                <div class="stat" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-num" data-counter="10">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label" data-en="Tier-1 Clients" data-ar="عميل من الفئة الأولى">Tier-1 Clients</div>
+                </div>
+                <div class="stat" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-num" data-counter="7">0</div>
+                    <div class="stat-plus"></div>
+                    <div class="stat-label" data-en="Gov. Classifications" data-ar="تصنيفات حكومية">Gov. Classifications</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-tag" data-en="01 / About" data-ar="01 / عن الشركة">01 / About</span>
+                <h2 class="section-title">
+                    <span data-en="Engineered for the" data-ar="مهندسون لخدمة">Engineered for the</span>
+                    <span class="accent" data-en="Kingdom" data-ar="المملكة">Kingdom</span>
+                </h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text" data-aos="fade-up">
+                    <p class="lead" data-en="Founded in 1973 by Mr. Naif Obaid Al Shammari and Mr. Jufal Obaid Al Shammari, JNCO is an industrial and commercial engineering firm with diversified experience across civil, mechanical and electrical construction." data-ar="تأسست عام 1973 على يد السيد نايف عبيد الشمري والسيد جفال عبيد الشمري، وهي شركة هندسية صناعية وتجارية تتمتع بخبرة متنوعة في الإنشاءات المدنية والميكانيكية والكهربائية.">
+                        Founded in 1973 by Mr. Naif Obaid Al Shammari and Mr. Jufal Obaid Al Shammari, JNCO is an industrial and commercial engineering firm with diversified experience across civil, mechanical and electrical construction.
+                    </p>
+                    <p data-en="From our headquarters in Ras Tanura, we have delivered infrastructure for the Kingdom's most demanding clients — Saudi Aramco, SABIC, the Royal Commission for Jubail & Yanbu, the Ministry of Defense and Aviation, and many others." data-ar="من مقرنا في رأس تنورة، قدّمنا البنية التحتية لأكثر العملاء تطلباً في المملكة — أرامكو السعودية، سابك، الهيئة الملكية للجبيل وينبع، ووزارة الدفاع والطيران، وغيرهم الكثير.">
+                        From our headquarters in Ras Tanura, we have delivered infrastructure for the Kingdom's most demanding clients — Saudi Aramco, SABIC, the Royal Commission for Jubail & Yanbu, the Ministry of Defense and Aviation, and many others.
+                    </p>
+                    <div class="about-meta">
+                        <div>
+                            <span class="meta-label" data-en="HQ" data-ar="المقر">HQ</span>
+                            <span class="meta-value" data-en="Ras Tanura, KSA" data-ar="رأس تنورة، السعودية">Ras Tanura, KSA</span>
+                        </div>
+                        <div>
+                            <span class="meta-label" data-en="CR No." data-ar="السجل التجاري">CR No.</span>
+                            <span class="meta-value">2054000095</span>
+                        </div>
+                        <div>
+                            <span class="meta-label" data-en="ISO" data-ar="الآيزو">ISO</span>
+                            <span class="meta-value">9001 Certified</span>
+                        </div>
+                        <div>
+                            <span class="meta-label" data-en="Coverage" data-ar="نطاق العمل">Coverage</span>
+                            <span class="meta-value" data-en="Kingdom-wide" data-ar="على مستوى المملكة">Kingdom-wide</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-cards">
+                    <div class="card-mission" data-aos="fade-left">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="6" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg>
+                        </div>
+                        <h3 data-en="Our Mission" data-ar="مهمتنا">Our Mission</h3>
+                        <p data-en="To deliver quality work performance strictly in accordance with local and international standards, ensuring the highest professionalism and client satisfaction in every undertaking." data-ar="تقديم أداء عمل عالي الجودة وفقاً للمعايير المحلية والدولية، مع ضمان أعلى مستويات الاحترافية ورضا العميل في كل مشروع.">
+                            To deliver quality work performance strictly in accordance with local and international standards, ensuring the highest professionalism and client satisfaction in every undertaking.
+                        </p>
+                    </div>
+
+                    <div class="card-vision" data-aos="fade-left" data-aos-delay="100">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                        </div>
+                        <h3 data-en="Our Vision" data-ar="رؤيتنا">Our Vision</h3>
+                        <p data-en="To become a world-class company that competes productively in trading and contracting — locally, regionally, and beyond." data-ar="أن نصبح شركة عالمية المستوى تتنافس بإنتاجية في مجال التجارة والمقاولات — محلياً وإقليمياً وما بعد.">
+                            To become a world-class company that competes productively in trading and contracting — locally, regionally, and beyond.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-tag" data-en="02 / Services" data-ar="02 / الخدمات">02 / Services</span>
+                <h2 class="section-title">
+                    <span data-en="What We" data-ar="ماذا">What We</span>
+                    <span class="accent" data-en="Build" data-ar="نبني">Build</span>
+                </h2>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-num">01</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M3 18h18M5 18V9l7-5 7 5v9M9 18v-7M15 18v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 data-en="Roads & Highways" data-ar="الطرق والطرق السريعة">Roads & Highways</h3>
+                    <p data-en="Complete road and highway construction, rehabilitation and pavement works to international standards." data-ar="إنشاء وإعادة تأهيل الطرق والطرق السريعة وأعمال الرصف وفقاً للمعايير الدولية.">Complete road and highway construction, rehabilitation and pavement works to international standards.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="service-num">02</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M3 12h18M3 12l3-3M3 12l3 3M21 12l-3-3M21 12l-3 3M8 9V6M16 9V6M8 18v-3M16 18v-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3 data-en="Bridges & Tunnels" data-ar="الجسور والأنفاق">Bridges & Tunnels</h3>
+                    <p data-en="Specialist construction of bridges and tunnels — including landmark intersections and overpasses." data-ar="إنشاءات متخصصة للجسور والأنفاق — بما في ذلك التقاطعات والجسور العلوية البارزة.">Specialist construction of bridges and tunnels — including landmark intersections and overpasses.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-num">03</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M4 22V8l8-5 8 5v14M9 22v-8h6v8M4 22h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 data-en="Buildings & Structures" data-ar="المباني والمنشآت">Buildings & Structures</h3>
+                    <p data-en="Multi-storey buildings, fire stations, residential villas and industrial structures." data-ar="مبانٍ متعددة الطوابق، محطات إطفاء، فلل سكنية، ومنشآت صناعية.">Multi-storey buildings, fire stations, residential villas and industrial structures.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="service-num">04</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2v6M12 16v6M2 12h6M16 12h6M5 5l4 4M15 15l4 4M5 19l4-4M15 9l4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3 data-en="Pile Driving" data-ar="دق الأوتاد">Pile Driving</h3>
+                    <p data-en="Sheet and steel pile driving with our extensive fleet of hammers and 550+ sheet pile inventory." data-ar="دق الأوتاد الفولاذية والصفائح بأسطول واسع من المطارق وأكثر من 550 وتداً صفائحياً.">Sheet and steel pile driving with our extensive fleet of hammers and 550+ sheet pile inventory.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-num">05</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M3 12c2-3 5-3 7 0s5 3 7 0 4-3 4 0M3 18c2-3 5-3 7 0s5 3 7 0 4-3 4 0M3 6c2-3 5-3 7 0s5 3 7 0 4-3 4 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3 data-en="Water & Sewage" data-ar="المياه والصرف الصحي">Water & Sewage</h3>
+                    <p data-en="Pumping stations, drainage and sewage systems, potable water lines and fire water networks." data-ar="محطات الضخ، أنظمة الصرف الصحي، خطوط المياه الصالحة للشرب وشبكات مياه الإطفاء.">Pumping stations, drainage and sewage systems, potable water lines and fire water networks.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="service-num">06</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h7l-2 8 10-12h-7l2-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 data-en="Electrical Works" data-ar="الأعمال الكهربائية">Electrical Works</h3>
+                    <p data-en="Street lighting, power distribution, cable laying with full testing and commissioning." data-ar="إنارة الشوارع، توزيع الطاقة، مدّ الكابلات مع الاختبار والتشغيل الكامل.">Street lighting, power distribution, cable laying with full testing and commissioning.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-num">07</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V10l4-3 4 3 4-3 2 1.5V21M9 14h2M13 14h2M9 17h2M13 17h2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 data-en="Site Development" data-ar="تطوير المواقع">Site Development</h3>
+                    <p data-en="Earthworks, asphalting and complete site development for industrial and commercial projects." data-ar="الأعمال الترابية، السفلتة، والتطوير الكامل للمواقع للمشاريع الصناعية والتجارية.">Earthworks, asphalting and complete site development for industrial and commercial projects.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="service-num">08</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M2 8l4-4h12l4 4M2 8v10a2 2 0 002 2h16a2 2 0 002-2V8M2 8h20M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 data-en="Aggregates Supply" data-ar="توريد الركام">Aggregates Supply</h3>
+                    <p data-en="In-house crusher plant in Abu Hadriyah supplies 200 tons/hour of aggregates and rock products." data-ar="مصنع كسارة خاص في أبو حدرية يوفر 200 طن/ساعة من الركام ومنتجات الصخور.">In-house crusher plant in Abu Hadriyah supplies 200 tons/hour of aggregates and rock products.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-num">09</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 data-en="Operations & Maintenance" data-ar="التشغيل والصيانة">Operations & Maintenance</h3>
+                    <p data-en="O&M services for irrigation mainlines, infrastructure systems and ongoing facility support." data-ar="خدمات التشغيل والصيانة للخطوط الرئيسية للري، أنظمة البنية التحتية والدعم المستمر للمرافق.">O&M services for irrigation mainlines, infrastructure systems and ongoing facility support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-tag" data-en="03 / Projects" data-ar="03 / المشاريع">03 / Projects</span>
+                <h2 class="section-title">
+                    <span data-en="Landmark" data-ar="مشاريع">Landmark</span>
+                    <span class="accent" data-en="Deliveries" data-ar="بارزة">Deliveries</span>
+                </h2>
+            </div>
+
+            <div class="projects-list">
+                <article class="project" data-aos="fade-up">
+                    <div class="project-image" style="background-image: url('images/works/curb-machine-power.jpg');"></div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-status active" data-en="ONGOING" data-ar="جارٍ">ONGOING</span>
+                            <span class="project-year">2023+</span>
+                        </div>
+                        <h3 data-en="SPARK Project — Abqaiq" data-ar="مشروع سبارك — بقيق">SPARK Project — Abqaiq</h3>
+                        <p data-en="Concrete curb construction by machine and New Jersey barrier installation across multiple SPARK packages with Sinohydro, CRCC and CCCC." data-ar="إنشاء حواف خرسانية بالماكينة وتركيب حواجز نيوجيرسي عبر حزم سبارك المتعددة مع سينوهيدرو وCRCC وCCCC.">Concrete curb construction by machine and New Jersey barrier installation across multiple SPARK packages with Sinohydro, CRCC and CCCC.</p>
+                        <div class="project-tags">
+                            <span>Sinohydro</span><span>CRCC</span><span>CCCC</span><span data-en="Concrete Works" data-ar="أعمال خرسانية">Concrete Works</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project" data-aos="fade-up" data-aos-delay="50">
+                    <div class="project-image" style="background-image: url('images/works/road-asphalt-fenced.jpg');"></div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-status done" data-en="COMPLETED" data-ar="مكتمل">COMPLETED</span>
+                            <span class="project-year">2021</span>
+                        </div>
+                        <h3 data-en="PIC R-7509 — Tertiary Roads, Yanbu" data-ar="PIC R-7509 — الطرق الثالثية، ينبع">PIC R-7509 — Tertiary Roads, Yanbu</h3>
+                        <p data-en="Construction of tertiary roads and underground utilities in Haii Al Mehan — earthworks, electrical lighting, sewer, potable water and irrigation networks." data-ar="إنشاء الطرق الثالثية والمرافق تحت الأرض في حي المحانة — أعمال ترابية، إضاءة كهربائية، صرف صحي، مياه صالحة للشرب وشبكات ري.">Construction of tertiary roads and underground utilities in Haii Al Mehan — earthworks, electrical lighting, sewer, potable water and irrigation networks.</p>
+                        <div class="project-tags">
+                            <span data-en="Royal Commission" data-ar="الهيئة الملكية">Royal Commission</span><span>Yanbu</span><span data-en="Roads & Utilities" data-ar="طرق ومرافق">Roads & Utilities</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image" style="background-image: url('images/works/bridge-yanbu-aerial.jpg');"></div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-status done" data-en="COMPLETED" data-ar="مكتمل">COMPLETED</span>
+                            <span class="project-year">2018</span>
+                        </div>
+                        <h3 data-en="Bridge at King Fahad & Tama Road" data-ar="جسر تقاطع الملك فهد وطريق التماء">Bridge at King Fahad & Tama Road</h3>
+                        <p data-en="Bridge construction at the intersection of King Fahad Road and Tama Road — including roads, street lighting and landscaping." data-ar="إنشاء جسر عند تقاطع طريق الملك فهد وطريق التماء — شامل الطرق وإنارة الشوارع والمساحات الخضراء.">Bridge construction at the intersection of King Fahad Road and Tama Road — including roads, street lighting and landscaping.</p>
+                        <div class="project-tags">
+                            <span data-en="Royal Commission" data-ar="الهيئة الملكية">Royal Commission</span><span>Yanbu</span><span data-en="Bridge" data-ar="جسر">Bridge</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project" data-aos="fade-up" data-aos-delay="150">
+                    <div class="project-image" style="background-image: url('images/works/asphalt-paver.jpg');"></div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-status done" data-en="COMPLETED" data-ar="مكتمل">COMPLETED</span>
+                            <span class="project-year">2016</span>
+                        </div>
+                        <h3 data-en="P&C Jubail Highway" data-ar="طريق الجبيل السريع">P&C Jubail Highway</h3>
+                        <p data-en="Planning & construction of Jubail Highway — major roads and bridge works for the Royal Commission, Jubail." data-ar="تخطيط وإنشاء طريق الجبيل السريع — أعمال طرق رئيسية وجسور للهيئة الملكية بالجبيل.">Planning & construction of Jubail Highway — major roads and bridge works for the Royal Commission, Jubail.</p>
+                        <div class="project-tags">
+                            <span data-en="Royal Commission" data-ar="الهيئة الملكية">Royal Commission</span><span>Jubail</span><span data-en="Highway" data-ar="طريق سريع">Highway</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image" style="background-image: url('images/works/duct-bank-mv.jpg');"></div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-status done" data-en="COMPLETED" data-ar="مكتمل">COMPLETED</span>
+                            <span class="project-year">2015</span>
+                        </div>
+                        <h3 data-en="Fire Stations — Jubail" data-ar="محطات الإطفاء — الجبيل">Fire Stations — Jubail</h3>
+                        <p data-en="Construction of fire station buildings for the Royal Commission, Jubail." data-ar="إنشاء مبانٍ لمحطات الإطفاء للهيئة الملكية بالجبيل.">Construction of fire station buildings for the Royal Commission, Jubail.</p>
+                        <div class="project-tags">
+                            <span data-en="Royal Commission" data-ar="الهيئة الملكية">Royal Commission</span><span data-en="Buildings" data-ar="مبانٍ">Buildings</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project" data-aos="fade-up" data-aos-delay="250">
+                    <div class="project-image" style="background-image: url('images/works/fire-hydrant-test.jpg');"></div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-status done" data-en="COMPLETED" data-ar="مكتمل">COMPLETED</span>
+                            <span class="project-year">2012</span>
+                        </div>
+                        <h3 data-en="National Guard — King Fahad City" data-ar="الحرس الوطني — مدينة الملك فهد">National Guard — King Fahad City</h3>
+                        <p data-en="Replacement of potable water inlet works for the National Guard at King Fahad City, Dammam." data-ar="استبدال أعمال مدخل المياه الصالحة للشرب للحرس الوطني في مدينة الملك فهد، الدمام.">Replacement of potable water inlet works for the National Guard at King Fahad City, Dammam.</p>
+                        <div class="project-tags">
+                            <span data-en="National Guard" data-ar="الحرس الوطني">National Guard</span><span data-en="Water Works" data-ar="أعمال مياه">Water Works</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <p class="projects-foot" data-aos="fade-up" data-en="… and 30+ more major deliveries across Saudi Aramco, SABIC, Petrokemya, Saudi Chevron Phillips and the wider industrial corridor of the Eastern Province." data-ar="… وأكثر من 30 مشروعاً رئيسياً عبر أرامكو السعودية وسابك وبتروكيميا وسعودي شيفرون فيليبس والممر الصناعي الأوسع في المنطقة الشرقية.">
+                … and 30+ more major deliveries across Saudi Aramco, SABIC, Petrokemya, Saudi Chevron Phillips and the wider industrial corridor of the Eastern Province.
+            </p>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-tag" data-en="04 / Field" data-ar="04 / من الميدان">04 / Field</span>
+                <h2 class="section-title">
+                    <span data-en="Work in" data-ar="العمل">Work in</span>
+                    <span class="accent" data-en="Progress" data-ar="على أرض الواقع">Progress</span>
+                </h2>
+            </div>
+
+            <div class="gallery-grid">
+                <figure class="g-item g-tall" data-aos="fade-up">
+                    <img src="images/works/road-streetlights.jpg" alt="Asphalt road with street lighting installation" loading="lazy" />
+                    <figcaption data-en="Asphalt Wearing Course · TR-3" data-ar="طبقة إسفلت تآكل · TR-3">Asphalt Wearing Course · TR-3</figcaption>
+                </figure>
+                <figure class="g-item" data-aos="fade-up" data-aos-delay="50">
+                    <img src="images/works/duct-bank-mv.jpg" alt="Medium voltage duct bank installation" loading="lazy" />
+                    <figcaption data-en="Medium Voltage Duct Bank" data-ar="مجرى الجهد المتوسط">Medium Voltage Duct Bank</figcaption>
+                </figure>
+                <figure class="g-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/works/fire-hydrant-test.jpg" alt="Fire hydrant flow testing on potable water line" loading="lazy" />
+                    <figcaption data-en="Potable Water · Hydrant Test" data-ar="مياه الشرب · اختبار الحنفية">Potable Water · Hydrant Test</figcaption>
+                </figure>
+                <figure class="g-item" data-aos="fade-up" data-aos-delay="150">
+                    <img src="images/works/road-industrial.jpg" alt="Industrial road completed with curb and gutter" loading="lazy" />
+                    <figcaption data-en="Curb & Gutter Installation" data-ar="تركيب الحواف والميازيب">Curb & Gutter Installation</figcaption>
+                </figure>
+                <figure class="g-item g-wide" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/works/bridge-yanbu-aerial.jpg" alt="Aerial view of King Fahad and Tama Road bridge intersection" loading="lazy" />
+                    <figcaption data-en="King Fahad × Tama — Yanbu Bridge" data-ar="جسر الملك فهد × التماء — ينبع">King Fahad × Tama — Yanbu Bridge</figcaption>
+                </figure>
+                <figure class="g-item" data-aos="fade-up" data-aos-delay="250">
+                    <img src="images/works/utility-chamber.jpg" alt="Reinforced concrete utility chamber and pipe inlet" loading="lazy" />
+                    <figcaption data-en="Drum Pit · Joint Box" data-ar="حفرة الأسطوانة · صندوق الوصلات">Drum Pit · Joint Box</figcaption>
+                </figure>
+                <figure class="g-item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="images/works/asphalt-paver.jpg" alt="Asphalt paver laying fresh wearing course" loading="lazy" />
+                    <figcaption data-en="Paving Asphalt" data-ar="فرش الإسفلت">Paving Asphalt</figcaption>
+                </figure>
+                <figure class="g-item" data-aos="fade-up" data-aos-delay="350">
+                    <img src="images/works/curb-machine-power.jpg" alt="Power Curber 5700-C machine extruding concrete curb" loading="lazy" />
+                    <figcaption data-en="Concrete Curb by Machine" data-ar="حواف خرسانية بالماكينة">Concrete Curb by Machine</figcaption>
+                </figure>
+                <figure class="g-item g-tall" data-aos="fade-up" data-aos-delay="400">
+                    <img src="images/works/curb-progress.jpg" alt="Concrete curb installation in progress" loading="lazy" />
+                    <figcaption data-en="Curbstone Installation" data-ar="تركيب أحجار الحواف">Curbstone Installation</figcaption>
+                </figure>
+                <figure class="g-item" data-aos="fade-up" data-aos-delay="450">
+                    <img src="images/works/base-course-prep.jpg" alt="Granular base course preparation for asphalting" loading="lazy" />
+                    <figcaption data-en="Granular Base Course" data-ar="طبقة الأساس الحبيبية">Granular Base Course</figcaption>
+                </figure>
+                <figure class="g-item" data-aos="fade-up" data-aos-delay="500">
+                    <img src="images/works/paving-progress.jpg" alt="Road paving and street lighting installation in progress" loading="lazy" />
+                    <figcaption data-en="Curb Construction · Yanbu" data-ar="إنشاء الحواف · ينبع">Curb Construction · Yanbu</figcaption>
+                </figure>
+                <figure class="g-item" data-aos="fade-up" data-aos-delay="550">
+                    <img src="images/works/highway-barrier.jpg" alt="New Jersey concrete barrier on highway" loading="lazy" />
+                    <figcaption data-en="New Jersey Barrier" data-ar="حاجز نيوجيرسي">New Jersey Barrier</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENTS -->
+    <section class="clients" id="clients">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-tag" data-en="05 / Trust" data-ar="05 / الثقة">05 / Trust</span>
+                <h2 class="section-title">
+                    <span data-en="Trusted by Saudi Arabia's" data-ar="موثوق به من قِبل">Trusted by Saudi Arabia's</span>
+                    <span class="accent" data-en="Industrial Giants" data-ar="عمالقة المملكة">Industrial Giants</span>
+                </h2>
+            </div>
+
+            <div class="clients-grid">
+                <div class="client" data-aos="zoom-in"><span>SAUDI ARAMCO</span></div>
+                <div class="client" data-aos="zoom-in" data-aos-delay="50"><span>SABIC</span></div>
+                <div class="client" data-aos="zoom-in" data-aos-delay="100"><span data-en="ROYAL COMMISSION" data-ar="الهيئة الملكية">ROYAL COMMISSION</span></div>
+                <div class="client" data-aos="zoom-in" data-aos-delay="150"><span data-en="SAUDI ELECTRIC CO." data-ar="السعودية للكهرباء">SAUDI ELECTRIC CO.</span></div>
+                <div class="client" data-aos="zoom-in" data-aos-delay="200"><span>MODA</span></div>
+                <div class="client" data-aos="zoom-in" data-aos-delay="250"><span>SAMSUNG ENG.</span></div>
+                <div class="client" data-aos="zoom-in" data-aos-delay="300"><span>SINOHYDRO</span></div>
+                <div class="client" data-aos="zoom-in" data-aos-delay="350"><span>CRCC</span></div>
+                <div class="client" data-aos="zoom-in" data-aos-delay="400"><span>CCCC</span></div>
+                <div class="client" data-aos="zoom-in" data-aos-delay="450"><span>SAUDI CHEVRON</span></div>
+                <div class="client" data-aos="zoom-in" data-aos-delay="500"><span>PETROKEMYA</span></div>
+                <div class="client" data-aos="zoom-in" data-aos-delay="550"><span data-en="NATIONAL GUARD" data-ar="الحرس الوطني">NATIONAL GUARD</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EQUIPMENT -->
+    <section class="equipment" id="equipment">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-tag" data-en="06 / Fleet" data-ar="06 / الأسطول">06 / Fleet</span>
+                <h2 class="section-title">
+                    <span data-en="A Fleet" data-ar="أسطول">A Fleet</span>
+                    <span class="accent" data-en="Built to Deliver" data-ar="جاهز للإنجاز">Built to Deliver</span>
+                </h2>
+            </div>
+
+            <div class="equipment-grid">
+                <div class="equip" data-aos="fade-up">
+                    <div class="equip-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M3 17h2m12 0h4v-5l-3-4h-5M3 17V7h13v10M3 17h11M16 17h1m-2 0a2 2 0 104 0 2 2 0 00-4 0zM5 17a2 2 0 104 0 2 2 0 00-4 0z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <span class="equip-tag" data-en="Owned & Maintained" data-ar="مملوك وصيانة مستمرة">Owned & Maintained</span>
+                    <h4 data-en="Trucks & Trailers" data-ar="شاحنات ومقطورات">Trucks & Trailers</h4>
+                    <p data-en="Dump trucks (15M³ & 20M³), boom trucks, low-bed trailers and service trucks." data-ar="شاحنات قلاب (15م³ و20م³)، شاحنات بأذرع، مقطورات منخفضة وشاحنات خدمة.">Dump trucks (15M³ & 20M³), boom trucks, low-bed trailers and service trucks.</p>
+                    <div class="equip-brands"><span>Volvo</span><span>Isuzu</span><span>MAN</span></div>
+                </div>
+                <div class="equip" data-aos="fade-up" data-aos-delay="50">
+                    <div class="equip-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M4 18h16M5 18l1-6h8l3 3h3v3M9 12V8h5M3 18a2 2 0 104 0 2 2 0 00-4 0zM17 18a2 2 0 104 0 2 2 0 00-4 0z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <span class="equip-tag" data-en="Owned & Maintained" data-ar="مملوك وصيانة مستمرة">Owned & Maintained</span>
+                    <h4 data-en="Loaders & Dozers" data-ar="لوادر وجرافات">Loaders & Dozers</h4>
+                    <p data-en="Wheel loaders, bulldozers and heavy-duty earth-moving equipment for any site condition." data-ar="لوادر بعجلات، جرافات، ومعدات نقل التربة الثقيلة لأي ظروف موقع.">Wheel loaders, bulldozers and heavy-duty earth-moving equipment for any site condition.</p>
+                    <div class="equip-brands"><span>CAT</span><span>Komatsu</span><span>Hyundai</span></div>
+                </div>
+                <div class="equip" data-aos="fade-up" data-aos-delay="100">
+                    <div class="equip-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><circle cx="7" cy="16" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="16" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M7 12V6h10v6M11 16h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                    </div>
+                    <span class="equip-tag" data-en="Owned & Maintained" data-ar="مملوك وصيانة مستمرة">Owned & Maintained</span>
+                    <h4 data-en="Rollers & Compactors" data-ar="مداحل ودكاكات">Rollers & Compactors</h4>
+                    <p data-en="Vibratory and pneumatic compactors for road compaction to international standards." data-ar="مداحل اهتزازية وهوائية لرص الطرق وفقاً للمعايير الدولية.">Vibratory and pneumatic compactors for road compaction to international standards.</p>
+                    <div class="equip-brands"><span>Dynapac</span><span>CAT</span><span>HAMM</span><span>Bomag</span></div>
+                </div>
+                <div class="equip" data-aos="fade-up" data-aos-delay="150">
+                    <div class="equip-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M4 20h16M6 20V8l8-4 4 6v10M14 4l-2 2M8 14h4M8 17h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <span class="equip-tag" data-en="20-70 Ton Capacity" data-ar="سعة 20-70 طن">20-70 Ton Capacity</span>
+                    <h4 data-en="Cranes" data-ar="رافعات">Cranes</h4>
+                    <p data-en="Truck-mounted, crawler and rough-terrain cranes for heavy lifts on any site." data-ar="رافعات مركّبة على شاحنات، زاحفة، ولوعرة لرفع الأحمال الثقيلة في أي موقع.">Truck-mounted, crawler and rough-terrain cranes for heavy lifts on any site.</p>
+                    <div class="equip-brands"><span>Grove</span><span>Lorain</span><span>P&H</span><span>American</span></div>
+                </div>
+                <div class="equip" data-aos="fade-up" data-aos-delay="200">
+                    <div class="equip-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M3 17h18M5 17v-5h14v5M7 12V8h10v4M2 17l1-2h18l1 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <span class="equip-tag" data-en="Owned & Maintained" data-ar="مملوك وصيانة مستمرة">Owned & Maintained</span>
+                    <h4 data-en="Asphalt Pavers" data-ar="فرّاشات إسفلت">Asphalt Pavers</h4>
+                    <p data-en="Full-spectrum asphalt paving fleet plus distributors for any road width and grade." data-ar="أسطول شامل لفرش الإسفلت مع موزّعات لأي عرض ودرجة طريق.">Full-spectrum asphalt paving fleet plus distributors for any road width and grade.</p>
+                    <div class="equip-brands"><span>Vögele</span><span>Barger Green</span><span>Dynapac</span></div>
+                </div>
+                <div class="equip" data-aos="fade-up" data-aos-delay="250">
+                    <div class="equip-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h2v16H4zM10 4h2v16h-2zM16 4h2v16h-2zM3 9h18M3 15h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                    </div>
+                    <span class="equip-tag" data-en="6-9 m sheet piles" data-ar="أوتاد 6-9 م">6-9 m sheet piles</span>
+                    <h4 data-en="Piling Capability" data-ar="قدرات دق الأوتاد">Piling Capability</h4>
+                    <p data-en="Vibratory and diesel piling hammers with full sheet pile inventory for any foundation work." data-ar="مطارق دق اهتزازية وديزل مع مخزون كامل من الأوتاد الصفائحية لأي أعمال أساسات.">Vibratory and diesel piling hammers with full sheet pile inventory for any foundation work.</p>
+                    <div class="equip-brands"><span>Vulcan</span><span>MKT</span><span>Kobe</span><span>Delmag</span></div>
+                </div>
+                <div class="equip" data-aos="fade-up" data-aos-delay="300">
+                    <div class="equip-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <span class="equip-tag" data-en="Up to 635 kW" data-ar="حتى 635 ك.و">Up to 635 kW</span>
+                    <h4 data-en="Power Generation" data-ar="توليد الطاقة">Power Generation</h4>
+                    <p data-en="Diesel generators from 20 to 635 kW — keeping any remote site fully powered." data-ar="مولدات ديزل من 20 إلى 635 ك.و — لتشغيل أي موقع بعيد بكامل طاقته.">Diesel generators from 20 to 635 kW — keeping any remote site fully powered.</p>
+                    <div class="equip-brands"><span>CAT</span><span>Olympian</span><span>Yanmar</span></div>
+                </div>
+                <div class="equip" data-aos="fade-up" data-aos-delay="350">
+                    <div class="equip-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M3 17h18M5 17V8c0-1 1-2 2-2h10c1 0 2 1 2 2v9M7 8h10M9 12h6M5 17a2 2 0 104 0 2 2 0 00-4 0zM15 17a2 2 0 104 0 2 2 0 00-4 0z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <span class="equip-tag" data-en="Daily Crew Transit" data-ar="نقل العمالة اليومي">Daily Crew Transit</span>
+                    <h4 data-en="Workforce Transport" data-ar="نقل العمالة">Workforce Transport</h4>
+                    <p data-en="Pickups, sedans, coaches and mini-buses moving crews to site safely, every shift." data-ar="بيك أب، سيدان، حافلات وحافلات صغيرة لنقل الفرق إلى الموقع بأمان، كل وردية.">Pickups, sedans, coaches and mini-buses moving crews to site safely, every shift.</p>
+                    <div class="equip-brands"><span>Toyota</span><span>Mercedes</span><span>Isuzu</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AWARDS -->
+    <section class="awards" id="awards">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-tag" data-en="07 / Recognition" data-ar="07 / التقدير">07 / Recognition</span>
+                <h2 class="section-title">
+                    <span data-en="Awarded by" data-ar="بشهادة من">Awarded by</span>
+                    <span class="accent" data-en="Those Who Set the Bar" data-ar="من يضعون المعيار">Those Who Set the Bar</span>
+                </h2>
+            </div>
+
+            <div class="awards-grid">
+                <figure class="award-card" data-aos="fade-up">
+                    <div class="award-img"><img src="images/awards/aramco-15k-safe-hours.jpg" alt="Saudi Aramco Award of Excellence" loading="lazy" /></div>
+                    <figcaption>
+                        <span class="award-issuer" data-en="Saudi Aramco" data-ar="أرامكو السعودية">Saudi Aramco</span>
+                        <strong data-en="Award of Excellence" data-ar="جائزة التميّز">Award of Excellence</strong>
+                        <small data-en="15,000 Safe Hours · Marjan Project" data-ar="15,000 ساعة عمل آمنة · مشروع المرجان">15,000 Safe Hours · Marjan Project</small>
+                    </figcaption>
+                </figure>
+
+                <figure class="award-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="award-img"><img src="images/awards/rc-quality-q1-2014.jpg" alt="Royal Commission Quality Award" loading="lazy" /></div>
+                    <figcaption>
+                        <span class="award-issuer" data-en="Royal Commission · Bechtel" data-ar="الهيئة الملكية · بكتل">Royal Commission · Bechtel</span>
+                        <strong data-en="Top 10 Quality Club" data-ar="نادي الجودة العشرة الأوائل">Top 10 Quality Club</strong>
+                        <small data-en="Quarterly Quality Award · 2013–2014" data-ar="جائزة الجودة الربعية · 2013–2014">Quarterly Quality Award · 2013–2014</small>
+                    </figcaption>
+                </figure>
+
+                <figure class="award-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="award-img"><img src="images/awards/bechtel-recycling-2014.jpg" alt="Bechtel Jubail Recycling Champion" loading="lazy" /></div>
+                    <figcaption>
+                        <span class="award-issuer" data-en="Bechtel · SABCO" data-ar="بكتل · سابكو">Bechtel · SABCO</span>
+                        <strong data-en="Jubail Recycling Champion" data-ar="بطل إعادة التدوير في الجبيل">Jubail Recycling Champion</strong>
+                        <small data-en="ES&H Recognition · January 2014" data-ar="تقدير البيئة والسلامة · يناير 2014">ES&H Recognition · January 2014</small>
+                    </figcaption>
+                </figure>
+
+                <figure class="award-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="award-img"><img src="images/awards/rc-merit-esh.jpg" alt="Royal Commission Merit Certificate ES&H" loading="lazy" /></div>
+                    <figcaption>
+                        <span class="award-issuer" data-en="Royal Commission" data-ar="الهيئة الملكية">Royal Commission</span>
+                        <strong data-en="ES&H Merit Certificate" data-ar="شهادة استحقاق البيئة والسلامة">ES&H Merit Certificate</strong>
+                        <small data-en="Baseline Matrix Compliance · 715-C02" data-ar="الالتزام بمصفوفة الأساس · 715-C02">Baseline Matrix Compliance · 715-C02</small>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- POLICIES -->
+    <section class="policies">
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <span class="section-tag" data-en="08 / Standards" data-ar="08 / المعايير">08 / Standards</span>
+                <h2 class="section-title">
+                    <span data-en="Built on" data-ar="مبني على">Built on</span>
+                    <span class="accent" data-en="Principles" data-ar="مبادئ">Principles</span>
+                </h2>
+            </div>
+
+            <div class="policies-grid">
+                <div class="policy" data-aos="fade-up">
+                    <div class="policy-icon">Q</div>
+                    <h4 data-en="Quality Policy" data-ar="سياسة الجودة">Quality Policy</h4>
+                    <p data-en="ISO 9001-aligned quality systems with on-site inspection, phase reviews and full conformance to contract specifications." data-ar="أنظمة جودة متوافقة مع ISO 9001 مع التفتيش الميداني، ومراجعات المراحل، والمطابقة الكاملة لمواصفات العقد.">ISO 9001-aligned quality systems with on-site inspection, phase reviews and full conformance to contract specifications.</p>
+                </div>
+                <div class="policy" data-aos="fade-up" data-aos-delay="100">
+                    <div class="policy-icon">H</div>
+                    <h4 data-en="Health & Safety" data-ar="الصحة والسلامة">Health & Safety</h4>
+                    <p data-en="Safety takes precedence over expediency. Every employee, equipment and the wider community is paramount." data-ar="السلامة تأتي قبل السرعة. كل موظف ومعدة والمجتمع بأكمله هم في صدارة الأولويات.">Safety takes precedence over expediency. Every employee, equipment and the wider community is paramount.</p>
+                </div>
+                <div class="policy" data-aos="fade-up" data-aos-delay="200">
+                    <div class="policy-icon">E</div>
+                    <h4 data-en="Environment" data-ar="البيئة">Environment</h4>
+                    <p data-en="To save the environment is to save the planet. We minimize impact and apply environmentally friendly solutions." data-ar="إنقاذ البيئة هو إنقاذ الكوكب. نقلّل الأثر ونطبّق حلولاً صديقة للبيئة.">To save the environment is to save the planet. We minimize impact and apply environmentally friendly solutions.</p>
+                </div>
+                <div class="policy" data-aos="fade-up" data-aos-delay="300">
+                    <div class="policy-icon">P</div>
+                    <h4 data-en="People" data-ar="الموارد البشرية">People</h4>
+                    <p data-en="Equal opportunity, zero discrimination — we hire on attitude, experience and ability. Right person, right job." data-ar="تكافؤ الفرص ولا تمييز — نوظّف على أساس الكفاءة والخبرة والقدرة. الشخص المناسب في المكان المناسب.">Equal opportunity, zero discrimination — we hire on attitude, experience and ability. Right person, right job.</p>
+                </div>
+            </div>
+
+            <div class="certs" data-aos="fade-up">
+                <span data-en="Certified & Registered:" data-ar="موثّق ومُسجّل:">Certified & Registered:</span>
+                <div class="certs-list">
+                    <div class="cert">ISO 9001</div>
+                    <div class="cert">ARAMCO</div>
+                    <div class="cert">SABIC</div>
+                    <div class="cert">SEC</div>
+                    <div class="cert" data-en="ROYAL COMMISSION" data-ar="الهيئة الملكية">ROYAL COMMISSION</div>
+                    <div class="cert">NITAQAT</div>
+                    <div class="cert">GOSI</div>
+                    <div class="cert">VAT</div>
+                    <div class="cert" data-en="CHAMBER OF COMMERCE" data-ar="الغرفة التجارية">CHAMBER OF COMMERCE</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <span class="section-tag" data-en="09 / Contact" data-ar="09 / تواصل">09 / Contact</span>
+                    <h2 class="section-title">
+                        <span data-en="Let's build" data-ar="لنبني">Let's build</span>
+                        <span class="accent" data-en="something." data-ar="شيئاً معاً.">something.</span>
+                    </h2>
+                    <p class="contact-lead" data-en="Whether you're planning a road, a bridge, a treatment plant or a full industrial site — we have the team, the fleet and the track record to deliver." data-ar="سواء كنت تخطط لطريق، أو جسر، أو محطة معالجة، أو موقع صناعي متكامل — لدينا الفريق والأسطول والسجل لإنجاز ذلك.">
+                        Whether you're planning a road, a bridge, a treatment plant or a full industrial site — we have the team, the fleet and the track record to deliver.
+                    </p>
+
+                    <div class="contact-blocks">
+                        <a href="tel:+966593240459" class="contact-block">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.37 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label" data-en="Phone" data-ar="هاتف">Phone</span>
+                                <strong dir="ltr">+966 59 324 0459</strong>
+                                <small dir="ltr">+966 59 324 0457</small>
+                            </div>
+                        </a>
+
+                        <a href="mailto:info@naifjnco.com" class="contact-block">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/><path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label" data-en="Email" data-ar="البريد">Email</span>
+                                <strong>info@naifjnco.com</strong>
+                                <small>sales@naifjnco.com</small>
+                            </div>
+                        </a>
+
+                        <div class="contact-block">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label" data-en="Headquarters" data-ar="المقر الرئيسي">Headquarters</span>
+                                <strong data-en="P.O. Box 108, Ras Tanura 31941" data-ar="ص.ب. 108، رأس تنورة 31941">P.O. Box 108, Ras Tanura 31941</strong>
+                                <small data-en="Kingdom of Saudi Arabia" data-ar="المملكة العربية السعودية">Kingdom of Saudi Arabia</small>
+                            </div>
+                        </div>
+
+                        <a href="https://www.naifjnco.com" target="_blank" rel="noopener" class="contact-block">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20" stroke="currentColor" stroke-width="2"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label" data-en="Web" data-ar="الموقع">Web</span>
+                                <strong>www.naifjnco.com</strong>
+                                <small data-en="Serving the Kingdom of Saudi Arabia" data-ar="نخدم المملكة العربية السعودية">Serving the Kingdom of Saudi Arabia</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" data-aos="fade-left" name="jnco-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?sent=1">
+                    <input type="hidden" name="form-name" value="jnco-inquiry" />
+                    <p hidden><label>Don't fill this: <input name="bot-field" /></label></p>
+
+                    <div class="form-row">
+                        <label>
+                            <span data-en="Your Name" data-ar="الاسم">Your Name</span>
+                            <input type="text" name="name" required />
+                        </label>
+                        <label>
+                            <span data-en="Company" data-ar="الشركة">Company</span>
+                            <input type="text" name="company" />
+                        </label>
+                    </div>
+                    <label>
+                        <span data-en="Email" data-ar="البريد الإلكتروني">Email</span>
+                        <input type="email" name="email" required />
+                    </label>
+                    <label>
+                        <span data-en="Project Type" data-ar="نوع المشروع">Project Type</span>
+                        <select name="project_type">
+                            <option data-en="Roads & Highways" data-ar="طرق وطرق سريعة">Roads & Highways</option>
+                            <option data-en="Bridges & Tunnels" data-ar="جسور وأنفاق">Bridges & Tunnels</option>
+                            <option data-en="Buildings" data-ar="مبانٍ">Buildings</option>
+                            <option data-en="Water & Sewage" data-ar="مياه وصرف صحي">Water & Sewage</option>
+                            <option data-en="Equipment Rental" data-ar="تأجير معدات">Equipment Rental</option>
+                            <option data-en="Other" data-ar="أخرى">Other</option>
+                        </select>
+                    </label>
+                    <label>
+                        <span data-en="Tell us about your project" data-ar="أخبرنا عن مشروعك">Tell us about your project</span>
+                        <textarea name="message" rows="4" required></textarea>
+                    </label>
+                    <button type="submit" class="btn btn-primary">
+                        <span data-en="Send Inquiry" data-ar="إرسال الطلب">Send Inquiry</span>
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <p class="form-success" data-en="✓ Thank you — we'll be in touch shortly." data-ar="✓ شكراً لك — سنتواصل معك قريباً.">✓ Thank you — we'll be in touch shortly.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="logo1.png" alt="JNCO" />
+                        <div>
+                            <strong>JNCO</strong>
+                            <small data-en="Trading & Contracting Co." data-ar="للتجارة والمقاولات">Trading & Contracting Co.</small>
+                        </div>
+                    </div>
+                    <p data-en="Building excellence in contracting since 1973. Roads, bridges, infrastructure — delivered with confidence." data-ar="نبني التميّز في المقاولات منذ 1973. طرق، جسور، بنية تحتية — تُنجَز بثقة.">
+                        Building excellence in contracting since 1973. Roads, bridges, infrastructure — delivered with confidence.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h5 data-en="Company" data-ar="الشركة">Company</h5>
+                    <a href="#about" data-en="About JNCO" data-ar="عن الشركة">About JNCO</a>
+                    <a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a>
+                    <a href="#clients" data-en="Clients" data-ar="العملاء">Clients</a>
+                </div>
+
+                <div class="footer-col">
+                    <h5 data-en="Capabilities" data-ar="الإمكانات">Capabilities</h5>
+                    <a href="#services" data-en="Services" data-ar="الخدمات">Services</a>
+                    <a href="#equipment" data-en="Equipment" data-ar="المعدات">Equipment</a>
+                </div>
+
+                <div class="footer-col">
+                    <h5 data-en="Contact" data-ar="اتصل بنا">Contact</h5>
+                    <a href="tel:+966593240459" dir="ltr">+966 59 324 0459</a>
+                    <a href="mailto:info@naifjnco.com">info@naifjnco.com</a>
+                    <span data-en="Ras Tanura, KSA" data-ar="رأس تنورة، السعودية">Ras Tanura, KSA</span>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <small>© 2026 Jufal & Naif Obaid Al Shammari Trading & Contracting Co. — <span data-en="All rights reserved." data-ar="جميع الحقوق محفوظة.">All rights reserved.</span></small>
+                <small><span data-en="ISO 9001 · CR 2054000095" data-ar="آيزو 9001 · س.ت 2054000095">ISO 9001 · CR 2054000095</span></small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
